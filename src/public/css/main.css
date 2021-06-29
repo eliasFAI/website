@@ -1,6 +1,7 @@
 body {
-  background: #667db6; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
+  background-color: brown;
+  /*/background: #667db6; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(
     to right,
     #667db6,
     #0082c8,
@@ -9,14 +10,76 @@ body {
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #667db6,
-    #0082c8,
-    #0082c8,
-    #667db6
+    brown,
+    brown,
+    brown,
+    brown
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-p {
-  color: rgb(128, 105, 0);
+.lead {
+  background-color: white;
+  color: black;
   text-indent: 30px;
   text-transform: tolowercasse;
+}
+nav {
+  background-color: brown;
+}
+footer {
+  height: 30px;
+  color: white;
+  background-color: brown;
+  text-align: center;
+}
+
+.slider {
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+  height: 555px;
+}
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 20s infinite alternate;
+  animation-timing-function: ease-in;
+}
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+.slider img {
+  height: 555px;
+  width: 1300px;
+  object-fit: cover;
+}
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  58% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
 }

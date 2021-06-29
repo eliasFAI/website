@@ -13,4 +13,7 @@ router.get('/about', (req, res) => {
 router.get('/activity', (req, res) => {
   res.render('activity.html', { title: 'Trabajo Social' });
 });
+router.get('/radio', (req, res) => {
+  res.render('radio.html', { title: 'Radio Fm ' });
+});
 module.exports = router;
